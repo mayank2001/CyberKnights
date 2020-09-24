@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F5F6"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="463dp"
+        android:layout_height="374dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="490dp"
+        android:background="#87CEFA"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginEnd="257dp"
+        android:layout_marginBottom="252dp"
+        android:text="Remember me"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="258dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="260dp"
+        android:text="Forgot Password?"
+        android:textColor="#070707"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="266dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="684dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/otp_radius"
+        android:backgroundTint="#87CEFA"
+        android:text="GET OTP"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.466" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="134dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="634dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView10"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.326"
+        app:srcCompat="@drawable/wallet" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="381dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="266dp"
+        android:layout_marginBottom="550dp"
+        android:text="@string/expense_tracker"
+        android:textAlignment="center"
+        android:textColor="#131313"
+        android:textSize="36sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.408" />
+
+    <EditText
+        android:id="@+id/mobileNumber"
+        android:layout_width="287dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="444dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="375dp"
+        android:ems="10"
+        android:hint="MOBILE NUMBER"
+        android:inputType="number"
+        android:textColor="#151515"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.403" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="2dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#0E0E0E"
+        app:layout_constraintEnd_toStartOf="@+id/mobileNumber"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/phone" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginEnd="262dp"
+        android:layout_marginBottom="76dp"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:text="Don't Have  A Account?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
