@@ -50,7 +50,7 @@
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <EditText
-        android:id="@+id/mobileNumber"
+        android:id="@+id/month_income"
         android:layout_width="316dp"
         android:layout_height="42dp"
         android:layout_marginStart="32dp"
@@ -78,7 +78,7 @@
         app:layout_constraintTop_toBottomOf="@+id/mobileNumber" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/SignUP"
         android:layout_width="439dp"
         android:layout_height="55dp"
         android:background="#4682b4"
@@ -94,7 +94,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/cont"
         android:layout_width="221dp"
         android:layout_height="54dp"
         android:layout_marginStart="98dp"
