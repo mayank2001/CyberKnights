@@ -67,7 +67,7 @@
         app:layout_constraintStart_toEndOf="@+id/textView10"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.326"
-        app:srcCompat="@drawable/wallet_" />
+        app:srcCompat="@drawable/wallet" />
 
     <TextView
         android:id="@+id/textView9"
