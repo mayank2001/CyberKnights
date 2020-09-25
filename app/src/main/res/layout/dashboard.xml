@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="activities.dashboard"
+    tools:context=".activites.DashboardActivity"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -60,8 +60,8 @@
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="125dp"
-            android:layout_weight="1"
             android:layout_margin="10dp"
+            android:layout_weight="1"
             app:cardBackgroundColor="#fece2f"
             app:cardElevation="10dp">
 
@@ -74,7 +74,7 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/TotalTransactions"
+                    android:src="@drawable/totaltransactions"
                     android:layout_centerHorizontal="true"/>
 
                 <TextView
@@ -122,7 +122,7 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src=""
+                    android:src="@drawable/totaltransactions"
                     android:layout_centerHorizontal="true"/>
 
                 <TextView
