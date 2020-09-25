@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activities.dashboard"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/Start"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#2390E6"
+        android:padding="20dp">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            tools:srcCompat="@tools:sample/avatars"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/Full_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif-black"
+            android:includeFontPadding="false"
+            android:text="Manas Uplekar"
+            android:textSize="20sp"
+            android:layout_marginStart="20sp"
+            android:layout_toEndOf="@+id/imageView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Full_Name"
+            android:layout_marginLeft="10sp"
+            android:layout_toRightOf="@+id/imageView"
+            android:fontFamily="sans-serif-black"
+            android:includeFontPadding="false"
+            android:text="manasuplekar@gmail.com"
+            android:textSize="14sp"
+            android:layout_marginStart="20sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginTop="-100dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="125dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="#fece2f"
+            app:cardElevation="10dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/TotalTransactions"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/payment_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set Budget"
+                    android:includeFontPadding="false"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:id="@+id/payment_diss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="555"
+                    android:includeFontPadding="false"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_below="@id/payment_label"
+                    android:layout_centerHorizontal="true"/>
+
+
+
+
+             </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="125dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="#fece2f"
+            app:cardElevation="10dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src=""
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/booking_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set Spent"
+                    android:includeFontPadding="false"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:id="@+id/booking_diss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5885"
+                    android:includeFontPadding="false"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_below="@id/booking_label"
+                    android:layout_centerHorizontal="true"/>
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="All"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft=""
+                android:drawablePadding="10dp"
+                android:text="Transactions"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft=""
+                android:drawablePadding="10dp"
+                android:text="Reports"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="You can"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft=""
+                android:drawablePadding="10dp"
+                android:text="Contact Us"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Do you want to"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft=""
+                android:drawablePadding="10dp"
+                android:text="Logout"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:fontFamily="sans-serif-black"
+            android:background="#fef115"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
