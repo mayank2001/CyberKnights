@@ -2,13 +2,13 @@ package com.example.signup;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-        import android.os.Bundle;
+import android.os.Bundle;
 
-public class signup extends AppCompatActivity {
+public class monthly_budget extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup);
+        setContentView(R.layout.monthly_budget);
     }
 }
