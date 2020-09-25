@@ -105,14 +105,13 @@
         android:layout_height="wrap_content"
         android:background="@drawable/button_back"
         android:text="+ Add Now"
-        android:textColor="#FFFFFF"
-         />
+        android:textColor="#FFFFFF" />
 
-   <!-- <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="138dp"
-        android:layout_height="93dp"
-        />-->
+    <!-- <ImageView
+         android:id="@+id/imageView2"
+         android:layout_width="138dp"
+         android:layout_height="93dp"
+         />-->
 
 
 </LinearLayout>
