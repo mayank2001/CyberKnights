@@ -21,7 +21,7 @@
         app:srcCompat="@drawable/profile" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/Name"
         android:layout_width="316dp"
         android:layout_height="42dp"
         android:layout_marginStart="32dp"
@@ -36,7 +36,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/mob_number"
         android:layout_width="316dp"
         android:layout_height="42dp"
         android:layout_marginStart="32dp"
@@ -48,10 +48,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/Name" />
 
     <EditText
-        android:id="@+id/editTextDate"
+        android:id="@+id/date_birth"
         android:layout_width="316dp"
         android:layout_height="42dp"
         android:layout_marginStart="32dp"
@@ -62,7 +62,7 @@
         android:inputType="date"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/mob_number" />
 
     <EditText
         android:id="@+id/mobileNumber"
@@ -75,11 +75,11 @@
         android:hint="Monthly Income"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_birth" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/email_add"
         android:layout_width="316dp"
         android:layout_height="42dp"
         android:layout_marginStart="32dp"
@@ -120,5 +120,7 @@
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/email_add" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
