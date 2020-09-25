@@ -22,9 +22,10 @@ import javax.xml.datatype.Duration;
 
 public class LoginActivity extends AppCompatActivity {
 
-    EditText txtUsername,txtPassword;
-    Button get_otp;
+    EditText txtUsername, txtPassword;
+    Button get_otp, gotosignup;
     private FirebaseAuth firebaseAuth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,9 +33,16 @@ public class LoginActivity extends AppCompatActivity {
         txtUsername = (EditText) findViewById(R.id.user_name);
         txtPassword = (EditText) findViewById(R.id.Pass_word);
         get_otp = (Button) findViewById(R.id.get_otp);
-
+        gotosignup = findViewById(R.id.signup);
         firebaseAuth = FirebaseAuth.getInstance();
 
+
+        gotosignup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, SignupActivity.class));
+            }
+        });
         get_otp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,7 +70,7 @@ public class LoginActivity extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
 
-                                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                                    startActivity(new Intent(getApplicationContext(), dashboard.class));
 
                                 } else {
 
@@ -75,4 +83,5 @@ public class LoginActivity extends AppCompatActivity {
             }
 
         });
-    }}
+    }
+}

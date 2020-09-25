@@ -19,7 +19,7 @@
             android:id="@+id/imageView"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            tools:srcCompat="@tools:sample/avatars"
+            android:src="@drawable/profile"
             android:layout_centerVertical="true"
             />
 
@@ -159,6 +159,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="20dp"
+        android:visibility="gone"
         android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
@@ -170,7 +171,6 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableLeft=""
                 android:drawablePadding="10dp"
                 android:text="Transactions"/>
         </com.google.android.material.textfield.TextInputLayout>
@@ -184,7 +184,6 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableLeft=""
                 android:drawablePadding="10dp"
                 android:text="Reports"/>
         </com.google.android.material.textfield.TextInputLayout>
@@ -198,7 +197,6 @@
         <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableLeft=""
                 android:drawablePadding="10dp"
                 android:text="Contact Us"/>
                 </LinearLayout>
@@ -208,12 +206,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Do you want to"
+            android:visibility="gone"
             android:layout_marginBottom="10dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableLeft=""
                 android:drawablePadding="10dp"
                 android:text="Logout"/>
         </com.google.android.material.textfield.TextInputLayout>
@@ -222,10 +220,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Update"
+            android:layout_marginBottom="10dp"
             android:fontFamily="sans-serif-black"
             android:background="#fef115"/>
-
-
+    <Button
+        android:id="@+id/addIncome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Income"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-black"
+        android:background="#fef115"/>
+    <Button
+        android:id="@+id/addExpenditure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Expenditure"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-black"
+        android:background="#fef115"/>
+    <Button
+        android:id="@+id/detailedStats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Report"
+        android:fontFamily="sans-serif-black"
+        android:background="#fef115"/>
 
     </LinearLayout>
 
