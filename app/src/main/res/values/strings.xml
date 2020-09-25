@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CyberKnights</string>
+
+
+    <string name="expense_tracker">Expense Tracker</string>
+    <string name="wallet_image">wallet_image</string>
+    <string name="track_all_your_expenses_here">Track All Your Expenses Here</string>
+    <string name="todo">TODO</string>
+
+</resources>
