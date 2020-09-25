@@ -1,20 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activites.SignupActivity"
-    android:orientation="vertical">
+    tools:context=".activites.SignupActivity">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="187dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="126dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="316dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="316dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Mobile Number"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="316dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="DOB"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+    <EditText
+        android:id="@+id/mobileNumber"
+        android:layout_width="316dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Monthly Income"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="316dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Email ID"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobileNumber" />
+
     <TextView
         android:id="@+id/textView"
-        android:layout_width="match_parent"
+        android:layout_width="439dp"
         android:layout_height="55dp"
         android:background="#4682b4"
         android:paddingTop="10dp"
@@ -23,71 +102,22 @@
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
-         />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="187dp"
-        android:layout_height="143dp"
-        android:layout_gravity="center_horizontal"
-         />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="316dp"
-        android:layout_height="42dp"
-        android:ems="10"
-        android:hint="Name"
-        android:inputType="textPersonName"
-        />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="316dp"
-        android:layout_height="42dp"
-        android:ems="10"
-        android:hint="Mobile Number"
-        android:inputType="textPersonName"
-         />
-
-    <EditText
-        android:id="@+id/editTextDate"
-        android:layout_width="316dp"
-        android:layout_height="42dp"
-
-        android:ems="10"
-        android:hint="DOB"
-        android:inputType="date"
-         />
-
-    <EditText
-        android:id="@+id/mobileNumber"
-        android:layout_width="316dp"
-        android:layout_height="42dp"
-        android:ems="10"
-        android:hint="Monthly Income"
-        android:inputType="number"
-         />
-
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="316dp"
-        android:layout_height="42dp"
-
-        android:ems="10"
-        android:hint="Email ID"
-        android:inputType="textEmailAddress"
-         />
-
-
-<!-- top margin 20 20 deun dyal -->
     <Button
         android:id="@+id/button"
-        android:layout_width="227dp"
-        android:layout_height="57dp"
+        android:layout_width="221dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="98dp"
         android:background="@drawable/btn_continue"
         android:text="Continue"
         android:textColor="#FFFFFF"
-         />
-</LinearLayout>
-</ScrollView>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+</androidx.constraintlayout.widget.ConstraintLayout>
