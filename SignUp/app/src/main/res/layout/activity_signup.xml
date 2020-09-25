@@ -95,7 +95,7 @@
         android:id="@+id/textView"
         android:layout_width="439dp"
         android:layout_height="55dp"
-        android:background="#0173B9"
+        android:background="#4682b4"
         android:paddingTop="10dp"
         android:text="Sign Up"
         android:textAlignment="center"

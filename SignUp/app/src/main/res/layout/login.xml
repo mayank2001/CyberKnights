@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F2F5F6"
+    android:background="#4682b4"
     android:backgroundTint="#FFFFFF"
     tools:context=".MainActivity">
 
@@ -15,7 +15,7 @@
         android:layout_height="374dp"
         android:layout_marginStart="1dp"
         android:layout_marginBottom="490dp"
-        android:background="#0173B9"
+        android:background="#4682b4"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,7 +44,7 @@
         android:layout_marginEnd="66dp"
         android:layout_marginBottom="120dp"
         android:background="@drawable/otp_radius"
-        android:backgroundTint="#0173B9"
+        android:backgroundTint="#4682b4"
         android:text="GET OTP"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
@@ -107,7 +107,7 @@
         android:layout_height="42dp"
         android:layout_marginTop="48dp"
         android:ems="10"
-        android:hint="Name"
+        android:hint="Userame"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.654"
@@ -118,11 +118,14 @@
         android:id="@+id/editTextTextPersonName5"
         android:layout_width="274dp"
         android:layout_height="47dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="404dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.621"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

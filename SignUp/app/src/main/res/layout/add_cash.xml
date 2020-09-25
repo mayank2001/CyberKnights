@@ -8,10 +8,10 @@
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="507dp"
-        android:layout_height="205dp"
-        android:background="#0173B9"
-        android:backgroundTint="#0173B9"
+        android:layout_width="391dp"
+        android:layout_height="198dp"
+        android:background="#4682b4"
+        android:backgroundTint="#4682b4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -133,7 +133,7 @@
         android:layout_marginTop="696dp"
         android:layout_marginEnd="129dp"
         android:layout_marginBottom="34dp"
-        android:background="@drawable/otp_radius"
+        android:background="@drawable/btn_continue"
         android:text="+ Add Now"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -142,18 +142,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="123dp"
-        android:layout_height="108dp"
-        android:layout_marginStart="269dp"
-        android:layout_marginTop="92dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="585dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/imageView2"
+        android:layout_width="138dp"
+        android:layout_height="93dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="52dp"
+        android:src="@drawable/cash"
+        app:layout_constraintBottom_toBottomOf="@+id/textView13"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/white" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView13" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
