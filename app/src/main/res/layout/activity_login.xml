@@ -6,15 +6,15 @@
     android:layout_height="match_parent"
     android:background="#4682b4"
     android:backgroundTint="#FFFFFF"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="25dp">
 
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="463dp"
-        android:layout_height="374dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginBottom="490dp"
+        android:layout_width="460dp"
+        android:layout_height="242dp"
+        android:layout_marginBottom="417dp"
         android:background="#4682b4"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -27,72 +27,82 @@
         android:id="@+id/checkBox"
         android:layout_width="164dp"
         android:layout_height="33dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="413dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="213dp"
         android:text="Remember me"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.858"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.714" />
-
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/get_otp"
         android:layout_width="149dp"
         android:layout_height="41dp"
-        android:layout_marginTop="624dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginBottom="120dp"
-        android:background="@drawable/button_back"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="497dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="121dp"
+        android:background="@drawable/btn_continue"
         android:backgroundTint="#4682b4"
-        android:text="Continue"
+        android:text="Login"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/signup"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.412" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/signup"
         android:layout_width="149dp"
         android:layout_height="41dp"
-        android:layout_marginTop="624dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="120dp"
-        android:background="@drawable/button_back"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="572dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="46dp"
+        android:background="@drawable/btn_continue"
         android:backgroundTint="#4682b4"
         android:text="SignUp"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.412" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    =======
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.768" />
+    >>>>>>> Stashed changes
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="134dp"
         android:layout_height="140dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginBottom="634dp"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="503dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView10"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.326"
-        app:srcCompat="@drawable/wallet"/>
+        app:srcCompat="@drawable/wallet" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="381dp"
         android:layout_height="51dp"
-        android:layout_marginTop="266dp"
-        android:layout_marginBottom="550dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="428dp"
         android:text="@string/expense_tracker"
         android:textAlignment="center"
         android:textColor="#FFF9F9"
@@ -100,35 +110,44 @@
         android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.408" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    =======
+    app:layout_constraintTop_toTopOf="parent" />
+    >>>>>>> Stashed changes
 
     <EditText
         android:id="@+id/user_name"
         android:layout_width="280dp"
         android:layout_height="42dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="293dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="324dp"
         android:ems="10"
         android:hint="Username"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.648"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/Pass_word"
         android:layout_width="274dp"
         android:layout_height="47dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="351dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="261dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.621"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_name"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
