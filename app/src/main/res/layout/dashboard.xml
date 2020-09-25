@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activites.DashboardActivity"
+    tools:context=".activites.dashboard"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -194,15 +194,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="You can"
-            android:layout_marginBottom="10dp">
-
-            <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginBottom="10dp"/>
+        <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft=""
                 android:drawablePadding="10dp"
                 android:text="Contact Us"/>
-        </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -231,7 +230,7 @@
     </LinearLayout>
 
 
-</LinearLayout>
+
 
 
 

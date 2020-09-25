@@ -1,4 +1,4 @@
-package com.hackathon.cyberknights.basic;
+package com.hackathon.cyberknights.activites;
 
 import androidx.appcompat.app.AppCompatActivity;
 

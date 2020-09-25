@@ -14,7 +14,7 @@ public class setbudget extends AppCompatActivity {
     EditText editText;
 
     public void  setBudget(View view) {
-         Intent intent = new Intent(setbudget.this, com.hackathon.cyberknights.basic.dashboard.class );
+         Intent intent = new Intent(setbudget.this, dashboard.class );
 
          startActivity(intent);
 
