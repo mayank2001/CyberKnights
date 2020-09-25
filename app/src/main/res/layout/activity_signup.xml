@@ -87,7 +87,6 @@
         android:layout_height="57dp"
         android:background="@drawable/btn_continue"
         android:text="Continue"
-        android:textColor="#FFFFFF"
-         />
+        android:textColor="#FFFFFF" />
 </LinearLayout>
 </ScrollView>
