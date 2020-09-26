@@ -32,7 +32,10 @@ public class dashboard extends AppCompatActivity {
     FirebaseDatabase firebaseDatabase;
     DataSnapshot dataSnapshot;
     String TAG = "DashboardActivity";
-
+public void report (View view){
+   Intent intent = new Intent(dashboard.this, piechart.class);
+    startActivity(intent);
+};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -100,11 +103,6 @@ public class dashboard extends AppCompatActivity {
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,transactionlist);
         myListView.setAdapter(arrayAdapter);
 
-
-
-
-
-
     }
 
     @Override
@@ -113,6 +111,7 @@ public class dashboard extends AppCompatActivity {
 
 
     }
+
 
 
 }
