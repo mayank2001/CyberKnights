@@ -130,6 +130,7 @@
         android:inputType="textPersonName" />
 
     <ListView
+        android:id="@+id/transactions"
         android:layout_width="match_parent"
         android:layout_height="194dp" />
 

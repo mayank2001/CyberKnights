@@ -7,7 +7,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -88,6 +90,17 @@ public class dashboard extends AppCompatActivity {
             }
         });
 
+        ListView myListView = findViewById(R.id.transactions);
+        ArrayList<String> transactionlist = new ArrayList<String>();
+        transactionlist.add("Shopping = 5000Rs");
+        transactionlist.add("Miscellaneous = 2000Rs");
+        transactionlist.add("Food = 1500Rs");
+        transactionlist.add("Others = 500Rs");
+
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,transactionlist);
+        myListView.setAdapter(arrayAdapter);
+
+
 
 
 
@@ -97,10 +110,9 @@ public class dashboard extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        ArrayList<String> transactionlist = new ArrayList<String>();
-        transactionlist.add("Shopping = 5000Rs");
-        transactionlist.add("Miscellaneous = 2000Rs");
-        transactionlist.add("Food = 1500Rs");
-        transactionlist.add("Others = 500Rs");
+
+
     }
+
+
 }
