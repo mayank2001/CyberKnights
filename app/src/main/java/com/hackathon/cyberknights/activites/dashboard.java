@@ -30,19 +30,15 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class dashboard extends AppCompatActivity {
-    Button logout, addAmt;
+    Button logout, addAmt,reportG;
     FirebaseAuth firebaseAuth;
     DatabaseReference databaseReference;
     FirebaseDatabase firebaseDatabase;
     DataSnapshot dataSnapshot;
     String TAG = "DashboardActivity";
 
-    public void report(View view) {
-        Intent intent = new Intent(dashboard.this, piechart.class);
-        startActivity(intent);
-    }
 
-    ;
+
 
 
     TextView totalBalance, FullName, userEmail;
@@ -61,7 +57,7 @@ public class dashboard extends AppCompatActivity {
 
         userEmail = findViewById(R.id.userEmail);
         databaseReference = FirebaseDatabase.getInstance().getReference();
-
+        reportG = findViewById(R.id.reportB);
 
         addAmt = findViewById(R.id.addAmt);
 
@@ -87,7 +83,12 @@ public class dashboard extends AppCompatActivity {
                 Toast.makeText(dashboard.this, "Cannot Connect To Database4", Toast.LENGTH_SHORT).show();
             }
         });
-
+        reportG.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(dashboard.this,piechart.class));
+            }
+        });
 
         /*logout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -119,6 +120,8 @@ public class dashboard extends AppCompatActivity {
                 myListView.setAdapter(arrayAdapter);
             }
         });
+
+
 
 
     }

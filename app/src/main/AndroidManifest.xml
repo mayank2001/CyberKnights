@@ -25,6 +25,7 @@
         <activity android:name=".activites.LoginActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".activites.dashboard"/>
+        <activity android:name=".activites.piechart"/>
     </application>
 
 

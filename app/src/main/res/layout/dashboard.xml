@@ -142,16 +142,16 @@
         android:orientation="horizontal">
         <Button
             android:id="@+id/addAmt"
-            android:layout_width="186dp"
+            android:layout_width="match_parent"
             android:layout_height="52dp"
             android:text="Add" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/reportB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Pie Report"
-            android:onClick="report"
+            android:visibility="gone"
             />
     </LinearLayout>
 
