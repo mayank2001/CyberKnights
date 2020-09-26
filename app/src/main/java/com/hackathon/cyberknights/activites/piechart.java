@@ -20,8 +20,8 @@ public class piechart extends AppCompatActivity {
 
     AnyChartView anyChartView;
 
-    String[] months = {"Jan", "Feb", "Mar"};
-    int[] earnings = {100, 200, 300};
+    String[] transactions = {"Shopping", "Food", "Miscellaneous", "Others"};
+    int [] money = {5000, 1500, 2000, 500};
 
 
     @Override
@@ -39,8 +39,8 @@ public class piechart extends AppCompatActivity {
 
         Pie pie = AnyChart.pie();
         List<DataEntry> dataEntries = new ArrayList<>();
-        for (int i = 0; i < months.length; i++){
-            dataEntries.add(new ValueDataEntry(months[i], earnings[i]));
+        for (int i = 0; i < transactions.length; i++){
+            dataEntries.add(new ValueDataEntry(transactions[i], money[i]));
             
         }
 
