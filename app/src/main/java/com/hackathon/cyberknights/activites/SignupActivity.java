@@ -114,6 +114,7 @@ public class SignupActivity extends AppCompatActivity {
         });
 
     }
+
     private void sendExDataToFb(){
 
 

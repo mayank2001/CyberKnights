@@ -36,15 +36,16 @@ public class dashboard extends AppCompatActivity {
         setContentView(R.layout.dashboard);
 
         firebaseAuth = FirebaseAuth.getInstance();
-        Button addIncome = findViewById(R.id.addIncome);
-        Button addExpense = findViewById(R.id.addExpenditure);
-        Button viewReport = findViewById(R.id.detailedStats);
+
         final TextView totalBalance = findViewById(R.id.balanceGet);
-        TextView spendLimit = findViewById(R.id.spendLimit);
+
         final TextView FullName = findViewById(R.id.Full_Name);
-        logout = findViewById(R.id.logoutMain);
+
         final TextView userEmail = findViewById(R.id.userEmail);
         databaseReference  = FirebaseDatabase.getInstance().getReference();
+
+
+
 
 
 
@@ -56,9 +57,14 @@ public class dashboard extends AppCompatActivity {
                 //getters
                 String totalBaclans = Objects.requireNonNull(snapshot.child(Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid()).child("UserProfile").child("monthlyIncome").getValue()).toString();
                  totalBalance.setText(totalBaclans);
-                 String userName = Objects.requireNonNull(snapshot.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("UserProfile").child("userName").getValue()).toString();
+
+                 String userName = Objects.requireNonNull(snapshot.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("UserProfile").child("username").getValue()).toString();
                 FullName.setText(userName);
                 userEmail.setText(FirebaseAuth.getInstance().getCurrentUser().getEmail());
+
+
+
+
 
 
 
