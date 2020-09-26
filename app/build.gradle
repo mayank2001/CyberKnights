@@ -43,7 +43,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:19.4.0'
     implementation 'com.google.firebase:firebase-database:19.4.0'
     implementation 'com.firebaseui:firebase-ui-database:0.4.0'
-
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
     //ui dependencies
     implementation "androidx.recyclerview:recyclerview:1.1.0"
 
