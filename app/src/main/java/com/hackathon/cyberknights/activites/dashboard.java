@@ -20,6 +20,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.hackathon.cyberknights.R;
 
 import java.sql.DatabaseMetaData;
+import java.util.ArrayList;
 import java.util.Objects;
 
 public class dashboard extends AppCompatActivity {
@@ -96,7 +97,10 @@ public class dashboard extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-
-
+        ArrayList<String> transactionlist = new ArrayList<String>();
+        transactionlist.add("Shopping = 5000Rs");
+        transactionlist.add("Miscellaneous = 2000Rs");
+        transactionlist.add("Food = 1500Rs");
+        transactionlist.add("Others = 500Rs");
     }
 }

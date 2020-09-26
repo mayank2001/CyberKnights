@@ -39,7 +39,7 @@ public class AddCash extends AppCompatActivity {
          transactionlist.add("Shopping");
          transactionlist.add("Miscellaneous");
          transactionlist.add("Food");
-         transactionlist.add("");
+         transactionlist.add("Others");
 
 
 
